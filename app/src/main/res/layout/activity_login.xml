@@ -144,7 +144,7 @@
         android:layout_marginEnd="95dp"
         android:fontFamily="@font/mukta_malar_light"
         android:text="@string/tv_toSignUp"
-        android:textColor="@color/purple_700"
+        android:textColor="@color/green_700"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="@+id/signInButton"
         app:layout_constraintStart_toEndOf="@+id/tv_notRegistered"
