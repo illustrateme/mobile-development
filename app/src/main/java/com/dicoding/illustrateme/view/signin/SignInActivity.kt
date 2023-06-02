@@ -1,4 +1,4 @@
-package com.dicoding.illustrateme.view.login
+package com.dicoding.illustrateme.view.signin
 
 import android.content.Intent
 import android.os.Build
@@ -6,16 +6,17 @@ import android.os.Bundle
 import android.view.WindowInsets
 import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
-import com.dicoding.illustrateme.databinding.ActivityLoginBinding
+import com.dicoding.illustrateme.databinding.ActivitySigninBinding
+import com.dicoding.illustrateme.view.main.MainActivity
 import com.dicoding.illustrateme.view.signup.SignUpActivity
 
 class SignInActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityLoginBinding
+    private lateinit var binding: ActivitySigninBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityLoginBinding.inflate(layoutInflater)
+        binding = ActivitySigninBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         setupView()
@@ -40,6 +41,11 @@ class SignInActivity : AppCompatActivity() {
             val intent = Intent(this, SignUpActivity::class.java)
             startActivity(intent)
             finish()
+        }
+
+        binding.signInButton.setOnClickListener{
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
         }
     }
 }

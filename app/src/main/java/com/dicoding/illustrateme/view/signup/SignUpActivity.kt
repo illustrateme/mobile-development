@@ -6,16 +6,16 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.WindowInsets
 import android.view.WindowManager
-import com.dicoding.illustrateme.databinding.ActivityRegisterBinding
-import com.dicoding.illustrateme.view.login.SignInActivity
+import com.dicoding.illustrateme.databinding.ActivitySignupBinding
+import com.dicoding.illustrateme.view.signin.SignInActivity
 
 class SignUpActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityRegisterBinding
+    private lateinit var binding: ActivitySignupBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityRegisterBinding.inflate(layoutInflater)
+        binding = ActivitySignupBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         setupView()
@@ -37,6 +37,12 @@ class SignUpActivity : AppCompatActivity() {
 
     private fun setupAction() {
         binding.tvToSignIn.setOnClickListener{
+            val intent = Intent(this, SignInActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+
+        binding.signUpButton.setOnClickListener{
             val intent = Intent(this, SignInActivity::class.java)
             startActivity(intent)
             finish()

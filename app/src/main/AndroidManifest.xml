@@ -12,10 +12,18 @@
         android:theme="@style/Theme.IllustrateMe"
         tools:targetApi="31">
         <activity
+            android:name=".view.upload.UploadActivity"
+            android:exported="false"
+            android:label="@string/upload"/>
+        <activity
+            android:name=".view.profile.ProfileActivity"
+            android:exported="false"
+            android:label="@string/profile" />
+        <activity
             android:name=".view.signup.SignUpActivity"
             android:exported="false" />
         <activity
-            android:name=".view.login.SignInActivity"
+            android:name=".view.signin.SignInActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
