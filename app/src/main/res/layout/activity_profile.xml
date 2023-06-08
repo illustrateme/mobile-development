@@ -50,7 +50,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:fontFamily="@font/mukta_malar_bold"
-        android:text="Portofolio"
+        android:text="@string/portfolio"
         android:textColor="@color/black"
         android:textSize="22sp"
         app:layout_constraintStart_toStartOf="parent"

@@ -21,4 +21,6 @@
     <string name="gallery">Open Gallery</string>
     <string name="enter_desc">Enter Description</string>
     <string name="enter_title">Enter Title</string>
+    <string name="portfolio">Portfolio</string>
+    <string name="iv_post">Post Image</string>
 </resources>
