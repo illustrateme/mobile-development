@@ -23,4 +23,5 @@
     <string name="enter_title">Enter Title</string>
     <string name="portfolio">Portfolio</string>
     <string name="iv_post">Post Image</string>
+    <string name="image_splashscreen">image_splashscreen</string>
 </resources>
