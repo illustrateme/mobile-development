@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -11,6 +13,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.IllustrateMe"
         tools:targetApi="31">
+        <activity
+            android:name=".view.user.UserActivity"
+            android:exported="false"
+            android:label="@string/illustrator_profile"/>
         <activity
             android:name=".splash.SplashScreenActivity"
             android:exported="true">
@@ -33,7 +39,8 @@
             android:exported="false" />
         <activity
             android:name=".view.signin.SignInActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:noHistory="true"/>
         <activity
             android:name=".view.main.MainActivity"
             android:exported="false" />

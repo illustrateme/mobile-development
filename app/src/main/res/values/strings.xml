@@ -24,4 +24,13 @@
     <string name="portfolio">Portfolio</string>
     <string name="iv_post">Post Image</string>
     <string name="image_splashscreen">image_splashscreen</string>
+    <string name="tv_username">Username</string>
+    <string name="retry">Try Again</string>
+    <string name="user_name">username</string>
+    <string name="title">Title</string>
+    <string name="desc">Description</string>
+    <string name="tv_contactme">if you are interested, please contact me at</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="illustrator_profile">Illustrator Profile</string>
 </resources>
